@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(250, 205, 166);
+    margin: 0;
+    padding: 0;
+}
+header h1 {
+    text-align: top center;
+    margin-top: 100px;
+}
