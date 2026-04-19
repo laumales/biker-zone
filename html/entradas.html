@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto parqueadero</title>
 </head>
+
 <body>
-<h1>Registro De Entrada</h1>
-<h2>Placa De Motocicleta</h2>
-<form>
-    <input type ="text" name ="ingreseplaca" id="ingreseplaca" placeholder="ingrese placa">
-</form>
-<h2>Número de casco</h2>
-<form>
-    <input type="text" name ="tipoCobro" id="numerodecascos">
-</form>
-<h2> TIPO DE CLIENTE</h2>
-<form>
-    <label for="Hora">
-    <input type="radio" name="tipoCobro" id="Hora" value="Hora" checked>    
-     Hora O Fracción
-    </label>
+    <h1>Registro De Entrada</h1>
 
-    <label for="Dia">
-    <input type="radio" name="tipoCobro" id="Dia" value="Dia">    
-     Dia
-    </label>
 
-    <label for="Mensualidad">
-    <input type="radio" name="tipoCobro" id="Mensualidad" value="Mensualidad">    
-     Mensualidad
-    </label> <br>
-    <button type="submit"> Registrar Entrada </button>
-</form>
+    <form>
+        <label>Placa De Motocicleta</label>
+        <input type="text" id="ingreseplaca" placeholder="ingrese placa">
+        <br>
+        <label>Número de cascos:</label> 
+        <input type="text"  id="numerodecascos"> <br>
+        <label> Tipo De Cliente</label> 
+        <label for="Hora">
+
+            <input type="radio" name="tipoCobro"  value="Hora" checked>
+            Hora O Fracción
+        </label>
+
+        <label for="Dia">
+            <input type="radio" name="tipoCobro"  value="Dia">
+            Dia
+        </label>
+
+        <label for="Mensualidad">
+
+            <input type="radio" name="tipoCobro"  value="Mensualidad">
+            Mensualidad
+        </label> <br>
+        <button type="submit"> Registrar Entrada </button>
+    </form>
+
 </html>
