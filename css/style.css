@@ -7,3 +7,8 @@ header h1 {
     text-align: top center;
     margin-top: 100px;
 }
+
+.button-style {
+    color: white;
+    background-color: blue;
+}
