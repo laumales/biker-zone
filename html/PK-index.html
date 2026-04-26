@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        border: 10px dashed rgb(162, 211, 12);
+    }
+
+    .entrada {
+        border: 3px dashed rgb(117, 107, 227);
+        width: 50%;
+
+    }
+
+    .salida {
+        border: 3px dashed rgb(117, 107, 227);
+        display: flex;
+        width: 50%;
+        justify-content: right;
+    }
+</style>
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parqueadero solo motos</title>
+</head>
+
+<body>
+
+    <!--PARTE 1-->
+    <div class="container">
+        <div class="entrada">
+            <h1>registro de entrada</h1>
+            <form>
+                <label>Placa</label>
+                <input type="text" id="ingrese placa" placeholder="ingrese placa">
+                <br>
+                <label>Número de cascos</label>
+                <input type="number" id="númerodecascos"> <br>
+
+                <label>Tipo de cliente</label>
+                <br>
+                <label for="hora">
+                    <input type="radio" id="hora" name="tipoDecobro" value="hora" checked>
+                    Hora o fracción
+                    <label>
+
+                        <br>
+                        <label for="Dia/Noche">
+                            <input type="radio" id="dia/noche" name="tipoDecobro" value="dia/noche">
+                            Dia/noche
+                        </label>
+                        <br>
+                        <label for="mensualidad">
+                            <input type="radio" id="mensualidad" name="tipoDecobro" value="mensualidad">
+                            Mensualidad
+                        </label> <br>
+                        <button type="submit">
+                            Registro e imprimir
+                            <svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 24 24"
+                                fill="none" stroke="#736887" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-motorbike">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M2 16a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M16 16a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M7.5 14h5l4 -4h-10.5m1.5 4l4 -4" />
+                                <path d="M13 6h2l1.5 3l2 4" />
+                            </svg>
+                        </button>
+            </form>
+        </div>
+
+        <div class="salida">
+            <h1>Registro de salida</h1>
+        </div>
+    </div>
+</body>
+
+</html>
