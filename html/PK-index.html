@@ -16,30 +16,38 @@
 
     .salida {
         border: 3px dashed rgb(117, 107, 227);
-        display: flex;
-        width: 50%;
+        display: block;
+        width: 60%;
         justify-content: right;
     }
 </style>
-
-
-
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parqueadero solo motos</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
 
     <!--PARTE 1-->
     <div class="container">
+
         <div class="entrada">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                stroke="#736887" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-door-enter">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M13 12v.01" />
+                <path d="M3 21h18" />
+                <path d="M5 21v-16a2 2 0 0 1 2 -2h6m4 10.5v7.5" />
+                <path d="M21 7h-7m3 -3l-3 3l3 3" />
+            </svg>
             <h1>registro de entrada</h1>
             <form>
                 <label>Placa</label>
-                <input type="text" id="ingrese placa" placeholder="ingrese placa">
+                <input type="text" id="ingreseplaca" placeholder="ingrese placa">
                 <br>
                 <label>Número de cascos</label>
                 <input type="number" id="númerodecascos"> <br>
@@ -61,24 +69,42 @@
                             <input type="radio" id="mensualidad" name="tipoDecobro" value="mensualidad">
                             Mensualidad
                         </label> <br>
+
                         <button type="submit">
                             Registro e imprimir
-                            <svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="#736887" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-motorbike">
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-ticket">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M2 16a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                                <path d="M16 16a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                                <path d="M7.5 14h5l4 -4h-10.5m1.5 4l4 -4" />
-                                <path d="M13 6h2l1.5 3l2 4" />
+                                <path d="M15 5l0 2" />
+                                <path d="M15 11l0 2" />
+                                <path d="M15 17l0 2" />
+                                <path
+                                    d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2" />
+                            </svg>
                             </svg>
                         </button>
             </form>
         </div>
 
         <div class="salida">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                stroke="#736887" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                <path d="M9 12h12l-3 -3" />
+                <path d="M18 15l3 -3" />
+            </svg>
             <h1>Registro de salida</h1>
+            <br>
+            <form>
+                <label for="buscarporplaca"> Buscar por placa</label>
+                <br>
+                    <input type="text" id="buscarPorPlaca" name="buscarPorPlaca" placeholder="busqueda"
+                        pattern="[A-Za-z]{3}\s\d{2}[A-Za-z]?" title="Ingrese placa" required>  
+            </form>
         </div>
     </div>
 </body>
