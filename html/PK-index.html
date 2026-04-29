@@ -8,7 +8,7 @@
         border: 10px dashed rgb(162, 211, 12);
     }
 
-    .entrada {
+    /* .entrada {
         border: 3px dashed rgb(117, 107, 227);
         width: 50%;
 
@@ -19,7 +19,7 @@
         display: block;
         width: 60%;
         justify-content: right;
-    }
+    } */
 </style>
 
 <head>
@@ -53,38 +53,36 @@
                 <input type="number" id="númerodecascos"> <br>
 
                 <label>Tipo de cliente</label>
-                <br>
                 <label for="hora">
                     <input type="radio" id="hora" name="tipoDecobro" value="hora" checked>
                     Hora o fracción
-                    <label>
+                </label>
 
-                        <br>
-                        <label for="Dia/Noche">
-                            <input type="radio" id="dia/noche" name="tipoDecobro" value="dia/noche">
-                            Dia/noche
-                        </label>
-                        <br>
-                        <label for="mensualidad">
-                            <input type="radio" id="mensualidad" name="tipoDecobro" value="mensualidad">
-                            Mensualidad
-                        </label> <br>
 
-                        <button type="submit">
-                            Registro e imprimir
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="#736887" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-ticket">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M15 5l0 2" />
-                                <path d="M15 11l0 2" />
-                                <path d="M15 17l0 2" />
-                                <path
-                                    d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2" />
-                            </svg>
-                            </svg>
-                        </button>
+                <label for="Dia/Noche">
+                    <input type="radio" id="diaNoche" name="tipoDecobro" value="dia/noche">
+                    Dia/noche
+                </label>
+
+                <label for="mensualidad">
+                    <input type="radio" id="mensualidad" name="tipoDecobro" value="mensualidad">
+                    Mensualidad
+                </label>
+
+                <button type="submit">
+                    Registro e imprimir
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#736887" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-ticket">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M15 5l0 2" />
+                        <path d="M15 11l0 2" />
+                        <path d="M15 17l0 2" />
+                        <path
+                            d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2" />
+                    </svg>
+                    </svg>
+                </button>
             </form>
         </div>
 
@@ -102,8 +100,8 @@
             <form>
                 <label for="buscarporplaca"> Buscar por placa</label>
                 <br>
-                    <input type="text" id="buscarPorPlaca" name="buscarPorPlaca" placeholder="busqueda"
-                        pattern="[A-Za-z]{3}\s\d{2}[A-Za-z]?" title="Ingrese placa" required>  
+                <input type="text" id="buscarPorPlaca" name="buscarPorPlaca" placeholder="busqueda"
+                    pattern="[A-Za-z]{3}\s\d{2}[A-Za-z]?" title="Ingrese placa" required>
             </form>
         </div>
     </div>

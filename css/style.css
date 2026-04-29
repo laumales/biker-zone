@@ -3,12 +3,50 @@ body {
     margin: 0;
     padding: 0;
 }
-header h1 {
-    text-align: top center;
-    margin-top: 100px;
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
 }
 
-.button-style {
-    color: white;
+.entrada,
+.salida {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+}
+.entrada{
+    border-right: 2px dashed #883
+}
+form {
+    display:flex;
+    flex-direction: column;
+}
+input {
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+label {
+    display: block;
+    /* margin-top: 10px; */
+}
+form >* {
+    margin-bottom: 10px;
+}
+/* 
+ header h1 {
+    text-align: top center;
+    margin-top: 100px;
+} */
+
+button-style {
     background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
 }
