@@ -43,10 +43,15 @@ form >* {
     margin-top: 100px;
 } */
 
-button-style {
-    background-color: blue;
+.button-style {
+    background-color: rgb(91, 91, 236);
     color: white;
     padding: 10px;
-    border: none;
-    border-radius: 5px;
+    border: double;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    width: fit-content;
 }
