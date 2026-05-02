@@ -1,27 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<style>
-    .container {
-        display: flex;
-        flex-direction: row;
-        border: 10px dashed rgb(162, 211, 12);
-    }
-
-    /* .entrada {
-        border: 3px dashed rgb(117, 107, 227);
-        width: 50%;
-
-    }
-
-    .salida {
-        border: 3px dashed rgb(117, 107, 227);
-        display: block;
-        width: 60%;
-        justify-content: right;
-    } */
-</style>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,7 +29,7 @@
                 <input type="text" id="ingreseplaca" placeholder="ingrese placa">
                 <br>
                 <label>Número de cascos</label>
-                <input type="number" id="númerodecascos"> <br>
+                <input type="text" id="númerodecascos"> 
 
                 <label>Tipo de cliente</label>
                 <label for="hora">
@@ -97,13 +76,43 @@
             <h1>Registro de salida</h1>
             <br>
             <form>
-                <label for="buscarporplaca"> Buscar por placa</label>
-                <br>
-                <input type="text" id="buscarPorPlaca" name="buscarPorPlaca" placeholder="busqueda"
-                    pattern="[A-Za-z]{3}\s\d{2}[A-Za-z]?" title="Ingrese placa" required>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" />
+                    </svg>
+                    <!-- <label for="buscarporplaca"> Buscar por placa</label> -->
+                    <input required type="text" id="buscarPorPlaca" name="buscarPorPlaca" placeholder="busqueda"
+                        pattern="[A-Za-z]{3}\s\d{2}[A-Za-z]?" title="Ingrese placa" required>
+                    <button type="submit" class="button-style">Buscar</button> 
+                </div>
             </form>
+            <table  class="table-container"> 
+                <tr>
+                    <th>placa</th>
+                    <th>numero de cascos</th>
+                    <th>hora de ingreso</th>
+                    <th>hora de salidas</th>
+                </tr>
+                <tr>
+                    <td>YUM 45C</td>
+                    <td>4-5</td>
+                    <td>13:45:15</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>GLH 68I</td>
+                    <td>23</td>
+                    <td>8:12:34</td>
+                    <td>9:29:45</td>
+                </tr>
+            </table>
         </div>
     </div>
+
 </body>
 
 </html>

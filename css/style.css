@@ -17,6 +17,7 @@ body {
     padding: 20px;
     border-radius: 10px;
 }
+
 .entrada{
     border-right: 2px dashed #883
 }
@@ -32,16 +33,11 @@ input {
 }
 label {
     display: block;
-    /* margin-top: 10px; */
+    
 }
 form >* {
     margin-bottom: 10px;
 }
-/* 
- header h1 {
-    text-align: top center;
-    margin-top: 100px;
-} */
 
 .button-style {
     background-color: rgb(91, 91, 236);
@@ -54,4 +50,44 @@ form >* {
     gap: 7px;
     cursor: pointer;
     width: fit-content;
+}
+
+form > div {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 7px 2px rgb(148 185 34);
+  padding: 0.5rem;
+  gap: 0.5rem;
+  width: 50%;
+ 
+}
+
+.salida input[type="text"] {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 0.75rem 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+
+.table-container {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;  
+    border : 2px solid rgb(77, 78, 74); 
+}
+
+.table-container th {
+   background-color: rgb(186 193 174);  
+   border: 2px solid rgb(77, 78, 74); 
+   padding-left: 5px;                      
+}
+
+.table-container td {
+    border: 2px solid rgb(77, 78, 74);
+    text-align: center;
+    padding: 8px;
 }
