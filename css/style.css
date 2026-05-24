@@ -4,6 +4,20 @@ body {
     padding: 0;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    place-content: space-between;
+    padding: 40px;
+    margin: 8px;
+    border-bottom: 4px solid cadetblue;
+    font-size: 21px;
+
+    nav {
+        display: flex;
+        gap: 20px;
+    }
+}
 .container {
     display: flex;
     flex-direction: row;

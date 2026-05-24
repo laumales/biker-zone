@@ -4,32 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parqueadero solo motos</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <script src="../js/parking.js"></script>
-    <title>Proyecto parqueadero</title>
+    <script src="../js/logica-index.js"> </script>
 </head>
 
 <body>
-    <h1 id="Inicio">Bienvenido, Administrador</h1>
-    <hr>
-    <br>
-    <h2>Parqueadero Solo motos</h2>
-    <p>Hora o Fracción 1.200</p>
+    <header>
+        <div>
+            <a href="index.html">parqueadero solo motos </a>
+        </div>
+        <nav class="header-nav">
+            <a href="index.html">Inicio</a>
+            <a href="particulares.html">Particulares</a>
+            <a href="dia-noche.html">Día - Noche</a>
+            <a href="mensualidades.html">Mensualidades</a>
+            <a href="reporte-caja.html">Reporte De Caja</a>
+            <a href="configuracion.html">Configuración</a>
+        </nav>
+        <div>
+            <span>Administrador</span>
+        </div>
+    </header>
+    <!--PARTE 1-->
+    <div class="container">
 
-    <button class="button-style" type="button" onclick="registroDeEntrada()">Registro de entrada</button>
-    <button class="button-style" type="button" onclick="registroDeSalida()">Registro de salida</button>
-    <button class="button-style" type="button" onclick="verParqueadero()">Ver Parqueadero</button>
+        <div class="entrada">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                stroke="#736887" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-door-enter">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M13 12v.01" />
+                <path d="M3 21h18" />
+                <path d="M5 21v-16a2 2 0 0 1 2 -2h6m4 10.5v7.5" />
+                <path d="M21 7h-7m3 -3l-3 3l3 3" />
+            </svg>
+            <h1>registro de entrada</h1>
+            <form>
+                <label>Placa</label>
+                <input type="text" id="ingreseplaca" placeholder="ingrese placa">
+                <br>
+                <label>Número de cascos</label>
+                <input type="text" id="númerodecascos">
 
-    <nav>
-        <ul>
-            <li><a href="#Inicio">Inicio</a></li>
-            <li><a href="#ReporteDeCaja">Reporte De Caja</a></li>
-            <li><a href="#IniciarCaja">Iniciar Caja</a></li>
-            <li><a href="#Tarifas">Tarifas</a></li>
-            <li><a href="#CerrarSesion">Cerrar Sesion</a></li>
-        </ul>
-    </nav>
-   
+                <label>Tipo de cliente</label>
+                <label for="hora">
+                    <input type="radio" id="hora" name="tipoDecobro" value="hora" checked>
+                    Hora o fracción
+                </label>
+
+
+                <label for="Dia/Noche">
+                    <input type="radio" id="diaNoche" name="tipoDecobro" value="dia/noche">
+                    Dia/noche
+                </label>
+
+                <label for="mensualidad">
+                    <input type="radio" id="mensualidad" name="tipoDecobro" value="mensualidad">
+                    Mensualidad
+                </label>
+
+                <button type="submit" class="button-style">
+                    Registro e imprimir
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#736887" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-ticket">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M15 5l0 2" />
+                        <path d="M15 11l0 2" />
+                        <path d="M15 17l0 2" />
+                        <path
+                            d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <div class="salida">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                stroke="#736887" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-logout">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                <path d="M9 12h12l-3 -3" />
+                <path d="M18 15l3 -3" />
+            </svg>
+            <h1>Registro de salida</h1>
+            <br>
+            <form>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" />
+                    </svg>
+                    <!-- <label for="buscarporplaca"> Buscar por placa</label> -->
+                    <input required type="text" id="buscarPorPlaca" name="buscarPorPlaca" placeholder="busqueda"
+                        pattern="[A-Za-z]{3}\s\d{2}[A-Za-z]?" title="Ingrese placa" required>
+                    <button type="submit" class="button-style">Buscar</button>
+                </div>
+            </form>
+            <table class="table-container">
+                <tr>
+                    <th>placa</th>
+                    <th>numero de cascos</th>
+                    <th>hora de ingreso</th>
+                    <th>hora de salidas</th>
+                </tr>
+                <!-- Aquí  se van a cragar los registros -->
+            </table>
+        </div>
+    </div>
+
 </body>
 
 </html>
