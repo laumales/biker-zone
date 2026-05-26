@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensualidades</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
+
 <body>
     <header>
         <div>
@@ -19,12 +21,69 @@
             <a href="reporte-caja.html">Reporte De Caja</a>
             <a href="configuracion.html">Configuración</a>
         </nav>
-        <div >
+        <div>
             <span>Administrador</span>
         </div>
     </header>
     <main>
         <h1>Mensualidades</h1>
     </main>
+    <div class="buttons-container">
+        <button onclick="location.href='Susciptores.html'" class="style-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-users">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+            </svg>
+            Total Suscriptores
+        </button>
+        <button onclick="location.href='proximos-a-vencer.html'" class="style-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-stats">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+                <path d="M18 14v4h4" />
+                <path d="M14 18a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                <path d="M15 3v4" />
+                <path d="M7 3v4" />
+                <path d="M3 11h16" />
+            </svg>
+            Próximos a vencer
+        </button>
+        <button onclick="location.href='vencidos.html'" class="style-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-off">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M9 5h9a2 2 0 0 1 2 2v9m-.184 3.839a2 2 0 0 1 -1.816 1.161h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 1.158 -1.815" />
+                <path d="M16 3v4" />
+                <path d="M8 3v1" />
+                <path d="M4 11h7m4 0h5" />
+                <path d="M3 3l18 18" />
+            </svg>
+            Vencidos
+        </button>
+        <button onclick="location.href='registrar-suscriptor.html'" class="style-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                <path d="M16 11h6m-3 -3v6" />
+            </svg>
+            Agregar cliente nuevo
+        </button>
+
+
+    </div>
+
 </body>
+
 </html>
