@@ -48,21 +48,20 @@
                 <input type="text" id="númerodecascos">
 
                 <label>Tipo de cliente</label>
-                <label for="hora">
-                    <input type="radio" id="hora" name="tipoDecobro" value="hora" checked>
-                    Hora o fracción
-                </label>
-
-
-                <label for="Dia/Noche">
-                    <input type="radio" id="diaNoche" name="tipoDecobro" value="dia/noche">
-                    Dia/noche
-                </label>
-
-                <label for="mensualidad">
-                    <input type="radio" id="mensualidad" name="tipoDecobro" value="mensualidad">
-                    Mensualidad
-                </label>
+                <div class="radio-group">
+                    <label for="hora">
+                        <input type="radio" id="hora" name="tipoDecobro" value="hora" checked>
+                        Hora o fracción
+                    </label>
+                    <label for="diaNoche">
+                        <input type="radio" id="diaNoche" name="tipoDecobro" value="dia/noche">
+                        Dia/noche
+                    </label>
+                    <label for="mensualidad">
+                        <input type="radio" id="mensualidad" name="tipoDecobro" value="mensualidad">
+                        Mensualidad
+                    </label>
+                </div>
 
                 <button type="submit" class="button-style">
                     Registro e imprimir
@@ -100,7 +99,7 @@
                         <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
                         <path d="M21 21l-6 -6" />
                     </svg>
-                    <!-- <label for="buscarporplaca"> Buscar por placa</label> -->
+                    
                     <input required type="text" id="buscarPorPlaca" name="buscarPorPlaca" placeholder="busqueda"
                         pattern="[A-Za-z]{3}\s\d{2}[A-Za-z]?" title="Ingrese placa" required>
                     <button type="submit" class="button-style">Buscar</button>
@@ -113,7 +112,7 @@
                     <th>hora de ingreso</th>
                     <th>hora de salidas</th>
                 </tr>
-                <!-- Aquí  se van a cragar los registros -->
+         
             </table>
         </div>
     </div>
