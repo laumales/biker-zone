@@ -251,3 +251,24 @@ transform: translateY(0);
     gap: 8px;
     margin-top: 4px;
 }
+
+/* estilos de la modal */
+.modal {
+    background:#667eea;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 18px;
+    display: none;
+    flex-direction: column;
+    span {
+
+    }
+    
+    h1 {
+
+    }
+    button {
+        background: linear-gradient(135deg, rgb(180 201 12) 0%, #00b700f2 100%);
+    }
+}

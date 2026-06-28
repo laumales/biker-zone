@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parqueadero solo motos</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <script src="../js/logica-index.js"> </script>
+    <script type="module" src="../js/logica-index.js"> </script>
 </head>
 
 <body>
@@ -99,12 +99,29 @@
                         <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
                         <path d="M21 21l-6 -6" />
                     </svg>
-                    
+
                     <input required type="text" id="buscarPorPlaca" name="buscarPorPlaca" placeholder="busqueda"
                         pattern="[A-Za-z]{3}\s\d{2}[A-Za-z]?" title="Ingrese placa" required>
                     <button type="submit" class="button-style">Buscar</button>
+                    
                 </div>
+                
             </form>
+            <button class="button-style" id="btn-barcode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-barcode">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 7v-1a2 2 0 0 1 2 -2h2" />
+                            <path d="M4 17v1a2 2 0 0 0 2 2h2" />
+                            <path d="M16 4h2a2 2 0 0 1 2 2v1" />
+                            <path d="M16 20h2a2 2 0 0 0 2 -2v-1" />
+                            <path d="M5 11h1v2h-1l0 -2" />
+                            <path d="M10 11l0 2" />
+                            <path d="M14 11h1v2h-1l0 -2" />
+                            <path d="M19 11l0 2" />
+                        </svg>
+                    </button>
             <table class="table-container">
                 <tr>
                     <th>placa</th>
@@ -112,10 +129,24 @@
                     <th>hora de ingreso</th>
                     <th>hora de salidas</th>
                 </tr>
-         
+
             </table>
+
+            <!-- Código de la modal -->
+            <div class="modal" id="IDmodal">
+                <span>placa:</span>
+                <h1>lkw 68f</h1>
+                <span>cascos</span>
+                <h1>1-2</h1>
+                <span> valor a cobrar </span>
+                <h1>1200</h1>
+                <button class="button-style">confirmar pago y salida</button>
+            </div>
+
         </div>
     </div>
+
+
 
 </body>
 
